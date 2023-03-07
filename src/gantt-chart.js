@@ -113,7 +113,7 @@ var ganttChart = function(conf) {
             .attr("width", marginWidth)
             .attr("height", marginHeight);
 
-        drag = d3.behavior.drag()
+        drag = d3.behavior.dragStart()
             .on("dragstart", dragstart)
             .on("drag", dragmove)
             .on("dragend", dragend);
